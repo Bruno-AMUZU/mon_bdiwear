@@ -121,3 +121,15 @@ footer .container {
    justify-content: center;
    align-items: center;
 }
+
+.mon_parent{
+   display: flex;
+}
+
+.mon_parent p {
+   width: 80%;
+}
+
+.mon_parent ul {
+   width: 20%;
+}
