@@ -126,10 +126,12 @@ footer .container {
    display: flex;
 }
 
-.mon_parent p {
+.mon_parent div:first-child {
    width: 80%;
 }
 
-.mon_parent ul {
+.mon_parent div:last-child {
    width: 20%;
+   padding-left: 20px;
+   box-sizing: border-box;   
 }
