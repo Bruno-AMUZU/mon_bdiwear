@@ -1,154 +1,59 @@
- body {
-        font-family: Arial, Helvetica, sans-serif;
-        color: rgb(25, 25, 25);
+header {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-image: url(../image/family.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   }
 
- }
-
-.picto{
-   width: 25px;
-   height: 25px;
-   padding-top: 25px;
-   margin-left: 40px;
-}
-
-.bdiwear-header{
-   width: 100px;
-   height: 100px;
-}
-
- h1,h2,h3{
-    color: rgb(125, 48, 212);
-    border-left: 10px solid rgb(125, 48, 212);
-    padding-left: 15px;
-    font-weight: normal;
-    margin-bottom: 50px;
- }
-
- main ul {
-    list-style-type: none;
-    padding-left: O;
- }
-
- main ul li:not(:last-child){
-    border-bottom: 1px solid rgb(125, 48, 212);
-    padding: 5px 0;
- }
-
- main ul li {
-    padding: 5px 0;
- }
-
- main ul li:hover {
-    color: rgb(255, 255, 255);
-    background-color: rgb(125, 48, 212);
- }
-
-header nav {
-   margin: auto;
-   margin-left: 2px;
+header > div {
+   background-color: rgba(255, 255, 255, 0.5);
    width: 100%;
-   background-color: rgb(157, 155, 159);
+   height: 100%;
+}
+
+header > div div:first-child {
+   display: flex;
+   justify-content: center;
+}
+
+header ul {
+   list-style-type: none;
    text-align: center;
 }
 
- header nav ul {
-   list-style-type: none;
-   padding-left: 0;
- }
+header ul li {
+   display: inline;
+   margin: 5px;
+}
 
- header nav ul li {
-   display: inline-block;
-   border-left: 1px solid white;
-   margin: 0;
- }
-
-  header nav ul li:last-child {
-   border-right: 1px solid white;
- }
-
- header nav ul li a {
-   display: inline-block;
+header nav ul li a {
    text-decoration: none;
-   color: white;
-   background-color: rgb(157, 155, 159);
-   padding: 15px;
-   margin: 0;
-   font-size: 1.5rem;
- }
-
- header nav ul li a:hover {
-   background-color: #f2f2f2;
-   color:rgb(157, 155, 159);
- }
-
- .container {
-   max-width: 1000PX;
-   margin: auto;
- }
-
-footer{
-   background-color: #f2f2f2;
 }
 
- footer ul {
-   list-style-type: none;
- }
-
- .bandeau {
-    background-image: url(../image/family.png);
-    height: 300px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-footer .container {
-   display: flex;
-}
-
-.galerie div {
-   background-color: #333;
-   color: white;
-   padding: 30px 30px;
-   width: 25%;
-   margin: 20px;
-}
-
-.galerie {
+@media (min-width: 768px) {
+   header {
+      background-image: url(../image/family.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 500PX;
+   }
+   header > div {
    display: flex;
    flex-direction: row;
-   flex-wrap: wrap;
-   justify-content: center;
-   align-items: center;
-}
-
-.mon_parent{
-   display: flex;
-}
-
-.mon_parent div:first-child {
-   width: 80%;
-}
-
-.mon_parent div:last-child {
-   width: 20%;
-   padding-left: 20px;
-   box-sizing: border-box;
-}
-
-.mon_parent > div:last-child div {
-   position: sticky;
-   top: 20px;
-}
-
-@media (min-width: 500px) {
-   h1 {
-      color: red;
+   justify-content: space-around;
+   align-items: flex-start;
+   background-color: rgba(255, 255, 255, 0.5);
+   width: 100%;
+   height: 100%;
    }
-}
 
-@media (min-width: 800px) {
-   h1 {
-      color: green;
+   header > div ul {
+      margin-top: 45px;
+   }
+
+   header > div ul li {
+      margin: 0 5px;
    }
 }
