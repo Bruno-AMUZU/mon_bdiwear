@@ -12,7 +12,7 @@ header {
    }
 
 header > div {
-   background-color: rgba(255, 255, 255, 0.5);
+   background-color: rgba(255, 255, 255, 0.1);
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -42,11 +42,10 @@ a {
 
 header > div > div:last-child {
    display: flex;
+   text-align: center;
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   position:absolute;
-   bottom: 100px;
 }
 
 header > div > div:last-child a {
@@ -58,12 +57,84 @@ header > div > div:last-child a {
    width: 200px;
 }
 
+main {
+   max-width: 1000px;
+   margin: auto;
+   display: flex;
+   gap: 24px;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+main > article:first-child{
+   background-image: url(../image/homme.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+   flex-basis: 150px;
+   flex-grow: 1;
+   margin-top: 20px;
+   margin-bottom: 0;
+   aspect-ratio: 1/1;
+}
+
+main > article:nth-child(2){
+   background-image: url(../image/femme.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+   flex-basis: 150px;
+   flex-grow: 1;
+   margin-top: 20px;
+   margin-bottom: 0;
+   aspect-ratio: 1/1;
+}
+
+main > article:nth-child(3){
+   position: relative;
+   background-image: url(../image/defile.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+   flex-basis: 100%;
+   flex-grow: 1;
+   margin-top: 20px;
+   aspect-ratio: 4/1.5;
+}
+
+main > article:nth-child(3) h2 {
+   position: absolute;
+   left: 0;
+   top: 0;
+   background-color: white;
+   border-top-right-radius: 15px;
+   border-bottom-right-radius: 15px;
+   padding-right: 20px;
+   margin: 0;
+   corner-shape: round;
+}
+
+main > article {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 20px;
+}
+
+main > article a {
+   display: block;
+   text-align: center;
+   color: white;
+   background-color: black;
+   border-radius: 50px;
+   width: 150px;
+}
+
 footer {
    height: auto;
    display: flex;
    flex-wrap: wrap;
    justify-content: flex-start;
    align-items: center;
+   background-color: #d9d9d9;
+   margin-top: 50px;
 }
 
 footer ul {
@@ -75,8 +146,8 @@ footer ul:last-child {
 }
 
 footer img {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
 }
 
 
@@ -100,6 +171,15 @@ footer img {
    flex-direction: row;
    justify-content: space-around;
    align-items: flex-start;
+   }
+
+   header > div > div:last-child {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   position:absolute;
+   bottom: 150px;
    }
 
    header > div ul {
