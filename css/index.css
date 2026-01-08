@@ -112,30 +112,6 @@ main > article a {
    width: 150px;
 }
 
-footer {
-   height: auto;
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: flex-start;
-   align-items: center;
-   background-color: #d9d9d9;
-   margin-top: 50px;
-}
-
-footer ul {
-   list-style-type: none;
-}
-
-footer ul:last-child {
-   display: flex;
-}
-
-footer img {
-  width: 30px;
-  height: 30px;
-}
-
-
 @media (min-width: 768px) {
    header {
       background-image: url(../image/fond.png);
