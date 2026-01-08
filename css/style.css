@@ -104,7 +104,6 @@ main > article:nth-child(3) h2 {
    left: 0;
    top: 0;
    background-color: white;
-   border-top-right-radius: 15px;
    border-bottom-right-radius: 15px;
    padding-right: 20px;
    margin: 0;
