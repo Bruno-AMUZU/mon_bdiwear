@@ -1,13 +1,87 @@
+:root {
+   --couleur_principale: #fff;
+   --couleur_secondaire: #C5B498;
+   --couleur_secondaire_darker: #807562;
+   --couleur-text: #1A1A1B;
+   --couleur-neutre: #d9d9d9;
+}
+
 body {
     margin: 0;
-    color: #1A1A1B;
+    color: var(--couleur-text);
     font-family: 'Inyter', sans-serif;
+    background-color: var(--couleur_principale);
  }
+
+#breadcrumb ul{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+
+#breadcrumb li:not(:last-child)::after {
+   display: inline-block;
+   margin: 0 0.25rem;
+   content: ">";
+ }
+
+ #breadcrumb li:not(:last-child):hover {
+   text-decoration: solid var(--couleur-text);
+ }
+
+ @media (min-width: 768px) {
+   #header_main {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      background-color: var(--couleur_secondaire);
+    }
+   
+   #header_main ul{
+      display: flex;
+      flex-direction: row;
+      gap: 24px;
+   }
+
+   .filter_line ul  {
+      background-color: var(--couleur-neutre);
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+   }
+}
 
  main {
     max-width: 1000px;
     margin: auto;
  }
+
+.image_produit {
+   position: relative;
+   width: 200px;
+   height: 300px;
+}
+
+.gallerie article{
+   position: relative;
+}
+
+.gallerie article a {
+   position: absolute;
+   display: block;
+   bottom: 30px;
+   background-color: var(--couleur_secondaire);
+   border-radius: 50px;
+   font-weight: bold;
+   padding: 0 1rem;
+}
+
+.gallerie article a:hover {
+   background-color: var(--couleur_secondaire_darker);
+}
 
 ul {
     list-style: none;
@@ -15,7 +89,7 @@ ul {
 
  a {
     text-decoration: none;
-    color: #1A1A1B;
+    color: var(--couleur-text);
  }
 
  footer {
@@ -24,7 +98,7 @@ ul {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
-    background-color: #d9d9d9;
+    background-color: var(--couleur_secondaire);
     margin-top: 50px;
  }
  
