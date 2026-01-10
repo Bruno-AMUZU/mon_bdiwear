@@ -11,12 +11,14 @@ body {
     color: var(--couleur-text);
     font-family: 'Inyter', sans-serif;
     background-color: var(--couleur_principale);
+    font-size: 1rem;
  }
-
+ 
 #breadcrumb ul{
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
+   font-weight: bold;
 }
 
 #breadcrumb li:not(:last-child)::after {
@@ -26,10 +28,17 @@ body {
  }
 
  #breadcrumb li:not(:last-child):hover {
-   text-decoration: solid var(--couleur-text);
+   text-decoration: underline;
  }
 
  @media (min-width: 768px) {
+   header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+   }
+   
    #header_main {
       display: flex;
       flex-direction: row;
@@ -65,6 +74,13 @@ body {
    height: 300px;
 }
 
+.gallerie {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   gap: 24px;
+}
+
 .gallerie article{
    position: relative;
 }
@@ -81,6 +97,24 @@ body {
 
 .gallerie article a:hover {
    background-color: var(--couleur_secondaire_darker);
+}
+
+.collection {
+   position: relative;
+   padding: 0;
+}
+
+.collection h2 {
+   position: absolute;
+   bottom: 0;
+   background-color: var(--couleur_principale);
+   padding: 2px 1rem;
+   border-radius: 30px;
+
+}
+
+.image_collection {
+   width: 100%;
 }
 
 ul {
