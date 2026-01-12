@@ -151,3 +151,36 @@ main > article a {
       margin: 0 5px;
    }
 }
+
+footer {
+   height: auto;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+   align-items: center;
+   background-color: #C5B498;
+   margin-top: 50px;
+}
+
+footer ul {
+   list-style-type: none;
+}
+
+footer ul:last-child {
+   display: flex;
+}
+
+footer img {
+  width: 30px;
+  height: 30px;
+}
+
+ul, li, a {
+   text-decoration: none;
+   color: var(--couleur-text);
+   list-style-type: none;
+}
+
+body {
+   font-family: 'Inyter', sans-serif;
+}
