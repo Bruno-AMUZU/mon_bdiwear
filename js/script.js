@@ -1,13 +1,15 @@
-function openMenu(x) {
-    x.classList.toggle("change");
-    const menu = document.querySelector('.for_burger_menu');
-    const breadcrumb = document.querySelector('#breadcrumb');
-    
-    if (menu.style.display === 'flex') {
-        menu.style.display = 'none';
+let menuIcon = document.getElementById("menu_icon");
+let burgerMenu = document.querySelector(".for_burger_menu");
+let breadcrumb = document.querySelector('#breadcrumb');
+
+menuIcon.addEventListener("click", () => {
+    menuIcon.classList.toggle("change");
+
+    if (burgerMenu.style.display === 'flex') {
+        burgerMenu.style.display = 'none';
         breadcrumb.style.display = 'block';
     } else {
-        menu.style.display = 'flex';
+        burgerMenu.style.display = 'flex';
         breadcrumb.style.display = 'none';
     }
-}
+});
